@@ -1,1 +1,35 @@
-
+{
+  "name": "jarvis-player-api",
+  "version": "1.0.0",
+  "description": "Professional REST API with Express & Firebase",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "firebase",
+    "nodejs"
+  ],
+  "author": "Aryan",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.0.2",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
