@@ -1,4 +1,3 @@
-
 require("dotenv").config();
 
 const express = require("express");
@@ -12,7 +11,7 @@ app.use(cors());
 app.use(helmet());
 app.use(morgan("dev"));
 app.use(express.json());
-
+app.use("/api", playerRoutes);
 // Home
 app.get("/", (req, res) => {
   res.json({
