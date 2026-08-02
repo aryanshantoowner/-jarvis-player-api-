@@ -5,7 +5,7 @@ const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
 const morgan = require("morgan");
-
+const playerRoutes = require("./routes/player");
 const app = express();
 
 app.use(cors());
