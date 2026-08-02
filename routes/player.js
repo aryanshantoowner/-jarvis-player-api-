@@ -1,12 +1,9 @@
+
 const express = require("express");
 const router = express.Router();
 
-router.get("/players", (req, res) => {
-  res.json({
-    success: true,
-    message: "Player API Working 🚀",
-    data: []
-  });
-});
+const { getPlayers } = require("../controllers/playerController");
+
+router.get("/players", getPlayers);
 
 module.exports = router;
